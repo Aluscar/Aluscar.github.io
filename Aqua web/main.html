@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<button onclick="paginaAleatoria()" class="button">Click</button>
+
+<script>
+    function paginaAleatoria() {
+        const paginas = [
+            "https://www.wattpad.com/story/221670571",
+            "https://www.wattpad.com/story/399907253-eres-mio?utm_source=android&utm_medium=com.android.chrome&utm_content=story_info&wp_page=story_details_button&wp_uname=AlusPH",
+            "https://www.fanfiction.net/s/14091828/0/",
+            "https://www.wattpad.com/story/397950779?utm_source=android&utm_medium=link&utm_content=story_info&wp_page=story_details_button&wp_uname=Eldelasideasfumadas",
+            "aqua.html",
+            "https://www.wattpad.com/story/402684881-agua-dulce-konosuba-one-shot",
+            "https://www.wattpad.com/story/397338061-aqua-x-kazuma-c%C3%A1sate-conmigo-o-morimos",
+            "https://www.wattpad.com/story/294597801-konosuba-papeles-invertidos"
+        ];
+        const random = Math.floor(Math.random() * paginas.length);
+        window.location.href = paginas[random];
+    }
+</script>
+</body>
+</html>
+
